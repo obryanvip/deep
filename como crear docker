@@ -25,4 +25,8 @@ docker ps
 # Todos los contenedores (incluidos los detenidos)
 docker ps -a
 
+docker start obry   #abrir despues de caido el sistema
+docker stop obry
+
+
 
