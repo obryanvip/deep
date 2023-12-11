@@ -1,0 +1,12 @@
+docker creacion
+
+docker images
+ docker logout
+
+ docker login
+#Crear la imagen necesitas #dockerfile  #directorio #agregar nombre de usuario antes de nombre dela imagen:Version Para que pueda subir 
+ docker build -t obryanvip/androidstudio:1.5 /workspaces/android-studio-docker/
+
+
+
+docker push obryanvip/androidstudio:1.5 
