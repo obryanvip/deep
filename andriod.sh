@@ -6,6 +6,8 @@ docker run -d -p 6080:6080 -e EMULATOR_DEVICE="Samsung Galaxy S10" -e WEB_VNC=tr
 run --privileged -d
 
 docker exec -it obry adb emu sms send 04249470620 23232
+docker exec -u root obry apt install unzip
+
 
 
 
