@@ -39,4 +39,6 @@ docker stop obry
       docker exec -it keen_lumiere  sudo apt install default-jdk -y    #keen_lumiere es el usuario
       docker exec -it keen_lumiere  curl -L -o android-studio-2022.3.1.19-linux.tar.gz \https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2022.3.1.19/android-studio-2022.3.1.19-linux.tar.gz ; #install android studio en docker
 
+emulador de android docker google clound 
+docker run -d -p 6080:6080 -e EMULATOR_DEVICE="Samsung Galaxy S10" -e WEB_VNC=true  --name android-container budtmo/docker-android:emulator_13.0
 
