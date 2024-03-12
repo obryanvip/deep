@@ -20,3 +20,23 @@ docker run -it \
     sickcodes/dock-droid:latest
 
 
+
+
+    #############################2024 pasar a docker desde terminal
+
+ docker ps -a  # ver contenedores activos
+# Contenedores en ejecución
+docker ps
+
+# Todos los contenedores (incluidos los detenidos)
+docker ps -a
+
+docker start obry   #abrir despues de caido el sistema
+docker stop obry
+
+    docker exec -it obry sudo apt update
+     docker exec -it sudo apt install default-jdk -y
+      docker exec -it keen_lumiere  sudo apt install default-jdk -y    #keen_lumiere es el usuario
+      docker exec -it keen_lumiere  curl -L -o android-studio-2022.3.1.19-linux.tar.gz \https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2022.3.1.19/android-studio-2022.3.1.19-linux.tar.gz ; #install android studio en docker
+
+
