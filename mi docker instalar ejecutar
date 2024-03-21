@@ -1,0 +1,13 @@
+#te permite entrar al root de mi docker desde el terminal de afuera# #obry nombre del docker
+docker exec -u root -it obry bash
+
+
+docker exec -it obry sudo apt install firefox
+docker exec -it obry unzip /headless/download/a.zip -d /headless/download
+
+
+instalar como root en docker 
+
+docker exec -u root -it obry bash  #entra el root del docker
+sud apt install unzip
+ unzip /headless/download/a.zip -d /headless/download
