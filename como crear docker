@@ -30,3 +30,28 @@ docker stop obry
 
 
 
+11 abril 2024
+
+
+ docker images
+ docker logout
+ docker login
+ 
+ 
+ docker build -t obryanvip/androidstudi:2024 /workspaces/AndroidStudioInDocker/
+
+  docker build -t obryanvip/androidstudios:2024 /workspaces/AndroidStudioInDocker/
+
+  docker push obryanvip/androidstudios:2024
+
+   docker build -t obryanvip/android:2024 /workspaces/AndroidStudioInDocker/
+      docker build -t obryanvip/android:2024 /workspaces/AndroidStudioInDocker/
+docker push obryanvip/android:2024
+
+
+
+
+  usadoo en google clound 
+
+
+
