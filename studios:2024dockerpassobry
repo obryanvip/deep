@@ -1,0 +1,60 @@
+en google clound
+
+
+docker run -d --name obry --shm-size 2G -P -p 8888:5901 -p 8899:8080    -v /dev/shm:/dev/shm --user $(id -u):$(id -g) obryanvip/androidstudios:2024
+ docker ps -a
+pass obryan
+puerto 32768
+
+
+
+Welcome to Cloud Shell! Type "help" to get started.
+To set your Cloud Platform project in this session use “gcloud config set project [PROJECT_ID]”
+a9281639a@cloudshell:~$ docker run -d --name obry --shm-size 2G -P -p 8888:5901 -p 8899:8080    -v /dev/shm:/dev/shm --user $(id -u):$(id -g) obryanvip/androidstudios:2024        
+Unable to find image 'obryanvip/androidstudios:2024' locally
+2024: Pulling from obryanvip/androidstudios
+18d680d61657: Pull complete 
+0addb6fece63: Pull complete 
+78e58219b215: Pull complete 
+eb6959a66df2: Pull complete 
+050ba7f6a6d0: Pull complete 
+9130ad467993: Pull complete 
+a09a96229be2: Pull complete 
+b45561e4ed47: Pull complete 
+7cdd56d5c7af: Pull complete 
+81e1cf2684ce: Pull complete 
+f18e2de6417a: Pull complete 
+cf74f8bb0fce: Pull complete 
+7619d6de44e8: Pull complete 
+248abfb784e8: Pull complete 
+302acf4f5983: Pull complete 
+e6c0012b0c4b: Pull complete 
+6ee631c3760c: Pull complete 
+58f14ba63738: Pull complete 
+3ea050c3cbec: Pull complete 
+2e2f20b5ace4: Pull complete 
+d53679c27243: Pull complete 
+b6fb2499aa66: Pull complete 
+4f4fb700ef54: Pull complete 
+87a02b6b3d7b: Pull complete 
+62ba6775f6fd: Pull complete 
+48f6940bec73: Pull complete 
+1c71d454ee71: Pull complete 
+3a83b923af37: Pull complete 
+bd621edb7f79: Pull complete 
+244469a69e8e: Pull complete 
+ef11974d8c64: Pull complete 
+73d9e31ee2c8: Pull complete 
+efb5b94e6ed1: Pull complete 
+ee8ee53f309d: Pull complete 
+fca7e7aede9a: Pull complete 
+c2914949a2f7: Pull complete 
+fa755506ae6c: Pull complete 
+831009771fbb: Pull complete 
+Digest: sha256:96819c66e2baf2151722431e769998ea7426fc64eb7ff04dc6db6e94e6bf7716
+Status: Downloaded newer image for obryanvip/androidstudios:2024
+604471c56154b26bd8774c9b98d7cdd297e4ccf610bbfb504a44d12b678233ad
+a9281639a@cloudshell:~$ docker ps -a
+CONTAINER ID   IMAGE                           COMMAND                  CREATED              STATUS              PORTS                                                                     NAMES
+604471c56154   obryanvip/androidstudios:2024   "/dockerstartup/vnc_…"   About a minute ago   Up About a minute   0.0.0.0:8888->5901/tcp, 0.0.0.0:32768->6901/tcp, 0.0.0.0:8899->8080/tcp   obry
+a9281639a@cloudshell:~$ 
