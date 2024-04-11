@@ -5,7 +5,11 @@ docker run -d --name obry --shm-size 2G -P -p 8888:5901 -p 8899:8080    -v /dev/
  docker ps -a
 pass obryan
 puerto 32768
+instalar como root en docker 
 
+docker exec -u root -it obry bash  #entra el root del docker
+sud apt install unzip
+ unzip /headless/download/a.zip -d /headless/download
 
 
 Welcome to Cloud Shell! Type "help" to get started.
