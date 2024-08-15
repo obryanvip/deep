@@ -49,7 +49,7 @@ javascript:(function(){
 
 
 
-###########version 3 se detiene al el usuario haga cualquier cosa con el teclado o raton
+###########version 3 cada 2 segundos enter se detiene al el usuario haga cualquier cosa con el teclado o raton
 
  
  javascript:(function(){
@@ -86,4 +86,31 @@ javascript:(function(){
 
 
 
-####
+##########cambie el tiempo a 60 segundos el enter
+
+  javascript:(function(){
+    window.scrollTo(0, document.body.scrollHeight / 2);
+
+    var intervalId = setInterval(function(){
+        var event = new KeyboardEvent('keydown', {
+            bubbles: true,
+            cancelable: true,
+            key: 'Enter',
+            code: 'Enter',
+            keyCode: 13,
+            charCode: 13,
+            which: 13
+        });
+        document.activeElement.dispatchEvent(event);
+    }, 60000); // 60000 ms = 60 seconds
+
+    function stopInterval() {
+        clearInterval(intervalId);
+        document.removeEventListener('keydown', stopInterval);
+        document.removeEventListener('click', stopInterval);
+    }
+
+    document.addEventListener('keydown', stopInterval);
+    document.addEventListener('click', stopInterval);
+})();
+
