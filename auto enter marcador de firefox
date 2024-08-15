@@ -1,4 +1,4 @@
-######version111111
+######version111111 enter cada vez que doy clip
 
 
 javascript:(function(){
@@ -16,3 +16,74 @@ javascript:(function(){
         document.activeElement.dispatchEvent(event);
     }, 1000);
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+#################version 2 re enter cada 2 segundos no se detiene hasta recargar
+
+javascript:(function(){
+    window.scrollTo(0, document.body.scrollHeight / 2);
+    setInterval(function(){
+        var event = new KeyboardEvent('keydown', {
+            bubbles: true,
+            cancelable: true,
+            key: 'Enter',
+            code: 'Enter',
+            keyCode: 13,
+            charCode: 13,
+            which: 13
+        });
+        document.activeElement.dispatchEvent(event);
+    }, 2000);
+})();
+
+
+
+
+###########version 3 se detiene al el usuario haga cualquier cosa con el teclado o raton
+
+ 
+ javascript:(function(){
+    window.scrollTo(0, document.body.scrollHeight / 2);
+
+    var intervalId = setInterval(function(){
+        var event = new KeyboardEvent('keydown', {
+            bubbles: true,
+            cancelable: true,
+            key: 'Enter',
+            code: 'Enter',
+            keyCode: 13,
+            charCode: 13,
+            which: 13
+        });
+        document.activeElement.dispatchEvent(event);
+    }, 2000);
+
+    function stopInterval() {
+        clearInterval(intervalId);
+        document.removeEventListener('keydown', stopInterval);
+        document.removeEventListener('click', stopInterval);
+    }
+
+    document.addEventListener('keydown', stopInterval);
+    document.addEventListener('click', stopInterval);
+})();
+
+
+
+
+
+
+
+
+
+####
