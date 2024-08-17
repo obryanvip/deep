@@ -13,5 +13,5 @@ sudo apt purge --autoremove \
 sudo apt purge --autoremove \
  xvfb x11vnc build-essential 
 ssh-askpass xvfb x11vnc build-essential  xfce4-goodies xterm
-
+################java
 sudo apt install default-jdk -y 
