@@ -34,3 +34,7 @@ sudo apt-get install p7zip-full
 7z x mozilla_pro.zip
 zip -r mozilla75mb.zip .mozilla
 zip -r mozilla75mb.zip .mozilla
+
+
+#######COPIAR ARCHIVOS -R TODO -V MUESTRA LO COPIADO
+sudo cp -r -v /workspace/obryanvipip/gipot-android-stuio.config /home/gitpod/
