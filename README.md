@@ -36,5 +36,8 @@ zip -r mozilla75mb.zip .mozilla
 zip -r mozilla75mb.zip .mozilla
 
 
-#######COPIAR ARCHIVOS -R TODO -V MUESTRA LO COPIADO
+#######COPIAR UNA CARPETA  -R TODO -V MUESTRA LO COPIADO
 sudo cp -r -v /workspace/obryanvipip/gipot-android-stuio.config /home/gitpod/
+
+######COPIAR TODOS LOS ARCHIVOS DE UNA CARPETA ####SE USA EL PUNTO A FINAL DE LA CARPETA PARA COPIAR TODO
+sudo cp -r -v /workspace/obryanvipip/gipot-android-stuio.config/. /home/gitpod
