@@ -50,3 +50,21 @@ sudo cp -r -v /workspace/obryanvipip/gipot-android-stuio.config /home/gitpod/
 
 ######COPIAR TODOS LOS ARCHIVOS DE UNA CARPETA ####SE USA EL PUNTO A FINAL DE LA CARPETA PARA COPIAR TODO
 sudo cp -r -v /workspace/obryanvipip/gipot-android-stuio.config/. /home/gitpod
+
+
+
+
+
+######actualizar ubuntu desde la terminal 
+
+sudo apt update
+sudo apt -y upgrade
+sudo apt install -y update-manager-core
+sudo nano /etc/update-manager/release-upgrades  # Cambia Prompt=lts a Prompt=normal
+sudo do-release-upgrade
+
+
+
+
+
+
