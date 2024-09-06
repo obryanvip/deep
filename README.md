@@ -68,3 +68,53 @@ sudo do-release-upgrade
 
 
 
+
+
+
+docker rm -f $(docker ps -aq)
+
+
+docker rmi $(docker images -q)
+
+
+docker volume prune
+
+# 1. Eliminar todos los contenedores detenidos
+docker rm $(docker ps -aq)
+
+# 2. Eliminar todas las imágenes no utilizadas
+docker rmi -f $(docker images -q)
+
+# 3. Eliminar todos los volúmenes no utilizados
+docker volume prune -f
+
+# 4. Eliminar todas las redes no utilizadas
+docker network prune -f
+
+# 5. Eliminar todo (contenedores, imágenes, volúmenes y redes no utilizados)
+docker system prune -a --volumes -f
+
+# 6. Verificar el espacio liberado
+docker system df
+
+
+
+
+     docker build -t docker-emulator-android-30  .
+
+
+
+docker run --rm --privileged -e ANDROID_ARCH="x86" -v /dev/kvm:/dev/kvm docker-emulator-android-30
+
+
+
+docker run -d --name obry --shm-size 2G -P -p 8888:5901 -p 8899:6901 -e VNC_RESOLUTION=1280x1024  -u root  obryanvip/obryjulio:2027
+
+docker run -d --name obry --shm-size 2G -P -p 8888:5901 -p 8899:6901 -e VNC_RESOLUTION=1280x1024  -u root --privileged -e ANDROID_ARCH="x86" -v /dev/kvm:/dev/kvm docker-emulator-android-30
+
+
+
+
+
+
+
