@@ -154,6 +154,18 @@ docker run -d --name obry --shm-size 2G -P -p 8888:5901 -p 8899:6901 -e VNC_RESO
 docker run -d --name obry --shm-size 2G -P -p 8888:5901 -p 8899:6901 -e VNC_RESOLUTION=1280x1024  -u root --privileged -e ANDROID_ARCH="x86" -v /dev/kvm:/dev/kvm docker-emulator-android-30
 
 
+docker exec -it obry sudo apt install firefox 
+docker exec -it obry  ./opt/sdk/noVNC/utils/launch.sh --listen 8080 
+docker exec -it obry  /opt/sdk/funciono.sh
+docker exec -it obry  /opt/sdk/start.sh
+
+#te permite entrar al root de mi docker desde el terminal de afuera# #obry nombre del docker
+docker exec -u root -it obry bash
+
+
+
+
+
 
 
 
