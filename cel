@@ -1,0 +1,267 @@
+ docker run -d  -p 8080:8080 -p 5901:5901  --name obry  -e VNC_RESOLUTION=1280x1024  --privileged -e ANDROID_ARCH="x86" -v /dev/kvm:/dev/kvm obryanvip/cel:2020
+41914f1dd1a59c728fe45de260bf2d968dbaf2ed92ffcaa99afef801f5e9be50
+@obryanvip ➜ /workspaces/deep (main) $ docker stop obry ; 
+obry
+@obryanvip ➜ /workspaces/deep (main) $ chmod +x funciono.sh      ; docker cp funciono.sh obry:opt/sdk/ 
+Successfully copied 2.05kB to obry:opt/sdk/
+@obryanvip ➜ /workspaces/deep (main) $ docker start -i  obry
+###############################################################
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#
+#@                                                           @#
+#@  **  WARNING  **  WARNING  **  WARNING  **  WARNING  **   @#
+#@                                                           @#
+#@        YOU ARE RUNNING X11VNC WITHOUT A PASSWORD!!        @#
+#@                                                           @#
+#@  This means anyone with network access to this computer   @#
+#@  may be able to view and control your desktop.            @#
+#@                                                           @#
+#@ >>> If you did not mean to do this Press CTRL-C now!! <<< @#
+#@                                                           @#
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#
+Warning: could not find self.pem
+Using local websockify at /opt/sdk/noVNC/utils/websockify/run
+Starting webserver and WebSockets proxy on port 8080
+WebSocket server settings:
+  - Listen on :8080
+  - Web server. Web root: /opt/sdk/noVNC
+  - No SSL/TLS support (no cert file)
+  - proxying from :8080 to localhost:5900
+
+(xfce4-session:13): dbind-WARNING **: 18:55:27.270: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+xfce4-session: No SSH authentication agent found
+
+(xfwm4:72): dbind-WARNING **: 18:55:27.347: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(xfwm4:72): xfwm4-WARNING **: 18:55:27.524: Unsupported GL renderer (llvmpipe (LLVM 11.0.1, 256 bits)).
+
+(xfsettingsd:87): dbind-WARNING **: 18:55:27.562: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(xfsettingsd:87): libupower-glib-WARNING **: 18:55:27.568: Couldn't connect to proxy: Could not connect: No such file or directory
+
+(xfce4-panel:90): dbind-WARNING **: 18:55:27.656: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(Thunar:94): dbind-WARNING **: 18:55:27.692: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(xfdesktop:99): dbind-WARNING **: 18:55:27.739: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+#@                                                           @#
+#@  You can create an x11vnc password file by running:       @#
+#@                                                           @#
+#@       x11vnc -storepasswd password /path/to/passfile      @#
+#@  or   x11vnc -storepasswd /path/to/passfile               @#
+#@  or   x11vnc -storepasswd                                 @#
+#@                                                           @#
+#@  (the last one will use ~/.vnc/passwd)                    @#
+#@                                                           @#
+#@  and then starting x11vnc via:                            @#
+#@                                                           @#
+#@      x11vnc -rfbauth /path/to/passfile                    @#
+#@                                                           @#
+#@  an existing ~/.vnc/passwd file from another VNC          @#
+#@  application will work fine too.                          @#
+#@                                                           @#
+#@  You can also use the -passwdfile or -passwd options.     @#
+#@  (note -passwd is unsafe if local users are not trusted)  @#
+#@                                                           @#
+#@  Make sure any -rfbauth and -passwdfile password files    @#
+#@  cannot be read by untrusted users.                       @#
+#@                                                           @#
+#@  Use x11vnc -usepw to automatically use your              @#
+#@  ~/.vnc/passwd or ~/.vnc/passwdfile password files.       @#
+#@  (and prompt you to create ~/.vnc/passwd if neither       @#
+#@  file exists.)  Under -usepw, x11vnc will exit if it      @#
+#@  cannot find a password to use.                           @#
+#@                                                           @#
+#@                                                           @#
+#@  Even with a password, the subsequent VNC traffic is      @#
+#@  sent in the clear.  Consider tunnelling via ssh(1):      @#
+#@                                                           @#
+#@    http://www.karlrunge.com/x11vnc/#tunnelling            @#
+#@                                                           @#
+#@  Or using the x11vnc SSL options: -ssl and -stunnel       @#
+#@                                                           @#
+#@  Please Read the documentation for more info about        @#
+#@  passwords, security, and encryption.                     @#
+#@                                                           @#
+#@    http://www.karlrunge.com/x11vnc/faq.html#faq-passwd    @#
+#@                                                           @#
+#@  To disable this warning use the -nopw option, or put     @#
+#@  'nopw' on a line in your ~/.x11vncrc file.               @#
+#@                                                           @#
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#
+###############################################################
+
+** (xfdesktop:99): WARNING **: 18:55:27.872: Thumbnailer failed calling GetFlavors
+
+(xfce4-notifyd:102): dbind-WARNING **: 18:55:27.889: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(xfsettingsd:103): dbind-WARNING **: 18:55:27.891: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+** (xfdesktop:99): WARNING **: 18:55:27.924: Failed to get system bus: Could not connect: No such file or directory
+
+(wrapper-2.0:112): dbind-WARNING **: 18:55:27.947: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(wrapper-2.0:110): dbind-WARNING **: 18:55:27.955: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(wrapper-2.0:111): dbind-WARNING **: 18:55:27.979: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(wrapper-2.0:119): dbind-WARNING **: 18:55:28.025: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+09/09/2024 18:55:28 x11vnc version: 0.9.16 lastmod: 2019-01-05  pid: 14
+09/09/2024 18:55:28 Using X display :0
+09/09/2024 18:55:28 rootwin: 0x50e reswin: 0x1e00001 dpy: 0xd558a220
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 ------------------ USEFUL INFORMATION ------------------
+
+
+Navigate to this URL:
+
+    http://41914f1dd1a5:8080/vnc.html?host=41914f1dd1a5&port=8080
+
+Press Ctrl-C to exit
+
+
+09/09/2024 18:55:28 X DAMAGE available on display, using it for polling hints.
+09/09/2024 18:55:28   To disable this behavior use: '-noxdamage'
+09/09/2024 18:55:28 
+09/09/2024 18:55:28   Most compositing window managers like 'compiz' or 'beryl'
+09/09/2024 18:55:28   cause X DAMAGE to fail, and so you may not see any screen
+09/09/2024 18:55:28   updates via VNC.  Either disable 'compiz' (recommended) or
+09/09/2024 18:55:28   supply the x11vnc '-noxdamage' command line option.
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 Wireframing: -wireframe mode is in effect for window moves.
+09/09/2024 18:55:28   If this yields undesired behavior (poor response, painting
+09/09/2024 18:55:28   errors, etc) it may be disabled:
+09/09/2024 18:55:28    - use '-nowf' to disable wireframing completely.
+09/09/2024 18:55:28    - use '-nowcr' to disable the Copy Rectangle after the
+09/09/2024 18:55:28      moved window is released in the new position.
+09/09/2024 18:55:28   Also see the -help entry for tuning parameters.
+09/09/2024 18:55:28   You can press 3 Alt_L's (Left "Alt" key) in a row to 
+09/09/2024 18:55:28   repaint the screen, also see the -fixscreen option for
+09/09/2024 18:55:28   periodic repaints.
+09/09/2024 18:55:28   Note: '-scale' is on and this can cause more problems.
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 XFIXES available on display, resetting cursor mode
+09/09/2024 18:55:28   to: '-cursor most'.
+09/09/2024 18:55:28   to disable this behavior use: '-cursor arrow'
+09/09/2024 18:55:28   or '-noxfixes'.
+09/09/2024 18:55:28 using XFIXES for cursor drawing.
+09/09/2024 18:55:28 GrabServer control via XTEST.
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 Scroll Detection: -scrollcopyrect mode is in effect to
+09/09/2024 18:55:28   use RECORD extension to try to detect scrolling windows
+09/09/2024 18:55:28   (induced by either user keystroke or mouse input).
+09/09/2024 18:55:28   If this yields undesired behavior (poor response, painting
+09/09/2024 18:55:28   errors, etc) it may be disabled via: '-noscr'
+09/09/2024 18:55:28   Also see the -help entry for tuning parameters.
+09/09/2024 18:55:28   You can press 3 Alt_L's (Left "Alt" key) in a row to 
+09/09/2024 18:55:28   repaint the screen, also see the -fixscreen option for
+
+(xfce4-panel:90): garcon-CRITICAL **: 18:55:28.074: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+09/09/2024 18:55:28   periodic repaints.
+09/09/2024 18:55:28   Note: '-scale' is on and this can cause more problems.
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 XKEYBOARD: number of keysyms per keycode 7 is greater
+09/09/2024 18:55:28   than 4 and 51 keysyms are mapped above 4.
+09/09/2024 18:55:28   Automatically switching to -xkb mode.
+09/09/2024 18:55:28   If this makes the key mapping worse you can
+09/09/2024 18:55:28   disable it with the "-noxkb" option.
+09/09/2024 18:55:28   Also, remember "-remap DEAD" for accenting characters.
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 X FBPM extension not supported.
+Xlib:  extension "DPMS" missing on display ":0".
+09/09/2024 18:55:28 X display is not capable of DPMS.
+09/09/2024 18:55:28 --------------------------------------------------------
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 Default visual ID: 0x21
+09/09/2024 18:55:28 Read initial data from X display into framebuffer.
+09/09/2024 18:55:28 initialize_screen: fb_depth/fb_bpp/fb_Bpl 24/32/5120
+09/09/2024 18:55:28 scaling disabled for factor 1.000000 1.000000
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 X display :0 is 32bpp depth=24 true color
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 Autoprobing TCP port 
+09/09/2024 18:55:28 Autoprobing selected TCP port 5900
+09/09/2024 18:55:28 Autoprobing TCP6 port 
+09/09/2024 18:55:28 Autoprobing selected TCP6 port 5900
+09/09/2024 18:55:28 listen6: bind: Address already in use
+09/09/2024 18:55:28 Not listening on IPv6 interface.
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 Xinerama is present and active (e.g. multi-head).
+09/09/2024 18:55:28 Xinerama: number of sub-screens: 1
+09/09/2024 18:55:28 Xinerama: no blackouts needed (only one sub-screen)
+09/09/2024 18:55:28 
+
+(xfce4-panel:90): garcon-CRITICAL **: 18:55:28.102: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+09/09/2024 18:55:28 fb read rate: 165 MB/sec
+09/09/2024 18:55:28 fast read: reset -wait  ms to: 10
+09/09/2024 18:55:28 fast read: reset -defer ms to: 10
+09/09/2024 18:55:28 The X server says there are 10 mouse buttons.
+09/09/2024 18:55:28 screen setup finished.
+09/09/2024 18:55:28 
+09/09/2024 18:55:28 WARNING: You are running x11vnc WITHOUT a password.  See
+09/09/2024 18:55:28 WARNING: the warning message printed above for more info.
+09/09/2024 18:55:28 
+
+The VNC desktop is:      41914f1dd1a5:0
+PORT=5900
+
+******************************************************************************
+Have you tried the x11vnc '-ncache' VNC client-side pixel caching feature yet?
+
+The scheme stores pixel data offscreen on the VNC viewer side for faster
+retrieval.  It should work with any VNC viewer.  Try it by running:
+
+    x11vnc -ncache 10 ...
+
+One can also add -ncache_cr for smooth 'copyrect' window motion.
+More info: http://www.karlrunge.com/x11vnc/faq.html#faq-client-caching
+
+
+(xfce4-panel:90): garcon-CRITICAL **: 18:55:28.129: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:90): garcon-CRITICAL **: 18:55:28.156: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(wrapper-2.0:112): GLib-GIO-CRITICAL **: 18:55:28.285: g_file_new_for_path: assertion 'path != NULL' failed
+
+(wrapper-2.0:112): GLib-GIO-CRITICAL **: 18:55:28.285: g_file_monitor_file: assertion 'G_IS_FILE (file)' failed
+
+(wrapper-2.0:112): GLib-GObject-WARNING **: 18:55:28.285: invalid (NULL) pointer instance
+
+(wrapper-2.0:112): GLib-GObject-CRITICAL **: 18:55:28.285: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(wrapper-2.0:112): Gtk-WARNING **: 18:55:28.285: Attempting to add a widget with type GtkToggleButton to a container of type XfcePanelPlugin, but the widget is already inside a container of type XfcePanelPlugin, please remove the widget from its existing container first.
+
+(xfce4-session:13): xfce4-session-WARNING **: 18:55:28.313: failed to run script: Failed to execute child process ?/usr/bin/pm-is-supported? (No such file or directory)
+
+(xfce4-session:13): xfce4-session-WARNING **: 18:55:28.317: failed to run script: Failed to execute child process ?/usr/bin/pm-is-supported? (No such file or directory)
+
+(xfce4-session:13): xfce4-session-WARNING **: 18:55:28.321: failed to run script: Failed to execute child process ?/usr/bin/pm-is-supported? (No such file or directory)
+
+(wrapper-2.0:119): Gtk-WARNING **: 18:55:28.331: Negative content width -1 (allocation 1, extents 1x1) while allocating gadget (node button, owner XfceArrowButton)
+
+(wrapper-2.0:112): Gtk-WARNING **: 18:55:28.332: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner GtkToggleButton)
+
+(wrapper-2.0:111): Gtk-WARNING **: 18:55:28.339: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner PulseaudioButton)
+^Ccontext canceled
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ docker start -i  obry
+^Ccontext canceled
+
+@obryanvip ➜ /workspaces/deep (main) $ docker stop obry ; docker rm obry
+
+
+
+
+obry
+obry
+@obryanvip ➜ /workspaces/deep (main) $ 
+@obryanvip ➜ /workspaces/deep (main) $ 
+@obryanvip ➜ /workspaces/deep (main) $ 
+@obryanvip ➜ /workspaces/deep (main) $ 
+@obryanvip ➜ /workspaces/deep (main) $ docker run -d  -p 8080:8080 -p 5901:5901  --name obry  -e VNC_RESOLUTION=1280x1024  --privileged -e ANDROID_ARCH="x86" -v /dev/kvm:/dev/kvm obryanvip/cel:2020
+7bf8793a2ca7cf5071fffbce2f816aa2965c70983512fb25ccfff1441f56cfc7
+@obryanvip ➜ /workspaces/deep (main) $ docker stop obry ; 
+obry
+@obryanvip ➜ /workspaces/deep (main) $ chmod +x funciono.sh      ; docker cp funciono.sh obry:/opt/sdk/ 
+Successfully copied 2.05kB to obry:/opt/sdk/
+@obryanvip ➜ /workspaces/deep (main) $ docker start -i  obry
