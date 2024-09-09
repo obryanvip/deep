@@ -177,6 +177,15 @@ tar -czvf android_backup.tar.gz -C /ruta/en/host .android
 ######descomprimir 
 tar -xzvf android_backup.tar.gz -C /ruta/de/destino
 
+#####permisos y enviar 
+
+ chmod +x funciono.sh
+
+
+docker cp funciono.sh obry:opt/sdk/
+
+
+
 
 
 
