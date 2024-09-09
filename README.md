@@ -168,4 +168,16 @@ docker exec -u root -it obry bash
 
 
 
+######comprimir
+
+
+tar -czvf android_backup.tar.gz -C /ruta/en/host .android
+
+
+######descomprimir 
+tar -xzvf android_backup.tar.gz -C /ruta/de/destino
+
+
+
+
 
