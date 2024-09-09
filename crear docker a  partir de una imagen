@@ -175,3 +175,6 @@ b1444c2011fc: Layer already exists
 a8da9964a606: Layer already exists 
 6d190562115f: Layer already exists 
 2020: digest: sha256:583554be5e9803b87110e03138363767a402eb3541976864bec36bb91e794754 size: 6192
+
+  docker run -d --name obry -p 8080:8080 -p 5901:5901  --name obry  -e VNC_RESOLUTION=1280x1024  --privileged -e ANDROID_ARCH="x86" -v /dev/kvm:/dev/kvm obryanvip/umeyrbo:2000
+
