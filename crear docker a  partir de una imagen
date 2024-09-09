@@ -1,0 +1,177 @@
+Sí, puedes tomar el contenedor `obry`, realizar los cambios necesarios y luego crear una nueva imagen con el nombre `linux/io:2023`. Aquí están los pasos detallados:
+
+1. **Inicia el contenedor `obry` en modo interactivo**:
+   ```bash
+   docker start -i obry
+   ```
+
+2. **Realiza los cambios necesarios dentro del contenedor**. Por ejemplo, puedes editar archivos, instalar paquetes, etc.
+
+3. **Confirma los cambios y crea una nueva imagen a partir del contenedor modificado**:
+   Primero, obtén el ID del contenedor:
+   ```bash
+   docker ps -a
+   ```
+
+   Luego, crea una nueva imagen a partir del contenedor:
+   ```bash
+   docker commit id_del_contenedor linux/io:2023
+   ```
+
+Aquí tienes un ejemplo paso a paso:
+
+1. **Inicia el contenedor `obry` en modo interactivo**:
+   ```bash
+   docker start -i obry
+   ```
+
+2. **Realiza los cambios dentro del contenedor**. Por ejemplo, edita el archivo [`funciono.sh`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fworkspaces%2Fdeep%2Ffunciono.sh%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22c74395e6-7443-4cd6-8b50-ac58173819fd%22%5D "/workspaces/deep/funciono.sh"):
+   ```bash
+   nano /ruta/al/archivo/funciono.sh
+   ```
+
+3. **Guarda los cambios y sal del contenedor**.
+
+4. **Obtén el ID del contenedor**:
+   ```bash
+   docker ps -a
+   ```
+
+5. **Crea una nueva imagen a partir del contenedor modificado**:
+   ```bash
+   docker commit id_del_contenedor linux/io:2023
+   ```
+
+
+
+
+Esto creará una nueva imagen Docker llamada `linux/io:2023` con los cambios realizados en el contenedor `obry`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+#####ejemplo 
+
+
+
+
+
+@obryanvip ➜ /workspaces/deep (main) $ docker commit id_obry obryan/cel:2020
+Error response from daemon: No such container: id_obry
+@obryanvip ➜ /workspaces/deep (main) $ docker commit obry obryan/cel:2020
+sha256:4f3517158eb5aa257155b806adb59d4b49508b9cba729f20f0fa01f9c8ec6422
+@obryanvip ➜ /workspaces/deep (main) $ docker logout
+Removing login credentials for https://index.docker.io/v1/
+@obryanvip ➜ /workspaces/deep (main) $ docker login
+Log in with your Docker ID or email address to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com/ to create one.
+You can log in with your password or a Personal Access Token (PAT). Using a limited-scope PAT grants better security and is required for organizations using SSO. Learn more at https://docs.docker.com/go/access-tokens/
+
+Username: obryanvip
+Password: 
+WARNING! Your password will be stored unencrypted in /home/codespace/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credential-stores
+
+Login Succeeded
+@obryanvip ➜ /workspaces/deep (main) $ docker commit obry obryanvip/cel:2020
+Error response from daemon: write /root/.android/avd/x86_64.avd/userdata-qemu.img: no space left on device
+@obryanvip ➜ /workspaces/deep (main) $ docker ps -a
+CONTAINER ID   IMAGE                    COMMAND                  CREATED             STATUS                        PORTS     NAMES
+d24ce7f2333a   obryanvip/umeyrbo:2000   "/bin/sh -c /opt/sdk…"   About an hour ago   Exited (126) 12 minutes ago             obry
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ docker rmi obryan/cel:2020
+Untagged: obryan/cel:2020
+Deleted: sha256:4f3517158eb5aa257155b806adb59d4b49508b9cba729f20f0fa01f9c8ec6422
+Deleted: sha256:80e807b731828462433f9091dd4417f62cf5cf022743fce2bf43302567af2230
+@obryanvip ➜ /workspaces/deep (main) $ docker commit obry obryanvip/cel:2020
+sha256:cf318301512a304d936533bb704e6cd7a52b426145435f6faa1ac522596ef3ae
+@obryanvip ➜ /workspaces/deep (main) $ docker push obryanvip/cel:2020
+The push refers to repository [docker.io/obryanvip/cel]
+1cf07fc17eab: Preparing 
+9bba9b71bddd: Preparing 
+d121ced4b20d: Preparing 
+62074696c54d: Preparing 
+f9c0e4108538: Preparing 
+e1117c9134e6: Preparing 
+98829a9e7720: Preparing 
+1cb6d13480be: Preparing 
+bd1951c1ee6a: Preparing 
+fc1a56872369: Preparing 
+5f3a8913dc40: Preparing 
+e761e92589dc: Preparing 
+5f70bf18a086: Preparing 
+423fe357cc3e: Preparing 
+5015fa6cc2af: Preparing 
+407d1fc3d274: Preparing 
+1cf07fc17eab: Pushed 
+3b62710b0582: Mounted from obryanvip/umeyrbo 
+f0202b91061c: Mounted from obryanvip/umeyrbo 
+d3d6db2c175f: Mounted from obryanvip/umeyrbo 
+ffd8f63ac528: Mounted from obryanvip/umeyrbo 
+19a6262a2d39: Mounted from obryanvip/umeyrbo 
+b7cf470d518c: Mounted from obryanvip/umeyrbo 
+c2a958838b9e: Mounted from obryanvip/umeyrbo 
+ca058a6b4a66: Mounted from obryanvip/umeyrbo 
+b1444c2011fc: Mounted from obryanvip/umeyrbo 
+a8da9964a606: Mounted from obryanvip/umeyrbo 
+6d190562115f: Mounted from obryanvip/umeyrbo 
+2020: digest: sha256:583554be5e9803b87110e03138363767a402eb3541976864bec36bb91e794754 size: 6192
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $ ^C
+@obryanvip ➜ /workspaces/deep (main) $  sudo  docker run -d --name obry -p 8080:8080 -p 5901:5901  --name obry  -e VNC_RESOLUTION=1280x1024  --privileged -e ANDROID_ARCH="x86" -v /dev/kvm:/dev/kvm obryanvip/cel:2000
+Unable to find image 'obryanvip/cel:2000' locally
+docker: Error response from daemon: manifest for obryanvip/cel:2000 not found: manifest unknown: manifest unknown.
+See 'docker run --help'.
+@obryanvip ➜ /workspaces/deep (main) $ docker push obryanvip/cel
+Using default tag: latest
+The push refers to repository [docker.io/obryanvip/cel]
+tag does not exist: obryanvip/cel:latest
+@obryanvip ➜ /workspaces/deep (main) $ docker push obryanvip/cel:2020
+The push refers to repository [docker.io/obryanvip/cel]
+1cf07fc17eab: Preparing 
+9bba9b71bddd: Preparing 
+d121ced4b20d: Preparing 
+62074696c54d: Preparing 
+f9c0e4108538: Preparing 
+e1117c9134e6: Preparing 
+98829a9e7720: Preparing 
+1cb6d13480be: Preparing 
+bd1951c1ee6a: Preparing 
+fc1a56872369: Preparing 
+5f3a8913dc40: Preparing 
+e761e92589dc: Preparing 
+5f70bf18a086: Preparing 
+423fe357cc3e: Preparing 
+5015fa6cc2af: Preparing 
+407d1fc3d274: Preparing 
+407d1fc3d274: Layer already exists 
+3b62710b0582: Layer already exists 
+f0202b91061c: Layer already exists 
+d3d6db2c175f: Layer already exists 
+ffd8f63ac528: Layer already exists 
+19a6262a2d39: Layer already exists 
+b7cf470d518c: Layer already exists 
+c2a958838b9e: Layer already exists 
+ca058a6b4a66: Layer already exists 
+b1444c2011fc: Layer already exists 
+a8da9964a606: Layer already exists 
+6d190562115f: Layer already exists 
+2020: digest: sha256:583554be5e9803b87110e03138363767a402eb3541976864bec36bb91e794754 size: 6192
