@@ -1,7 +1,7 @@
  docker run --name obry -p 6080:80 -p 5900:5900 -e VNC_RESOLUTION=1280x1024 --device /dev/kvm  yodascholtz/docker-android-whatsapp-avd
 
 
-
+docker run --name obry -e WEB_VNC=true  -p 6080:80 -p 5900:5900 -e VNC_RESOLUTION=1280x1024 --device /dev/kvm -u  root yodascholtz/docker-android-whatsapp-avd
 
 ##############################Comandos
 
