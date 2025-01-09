@@ -1,0 +1,121 @@
+docker run --name obry -p 6080:80 -p 5900:5900 -e VNC_RESOLUTION=1280x1024 --device /dev/kvm yodascholtz/docker-android-whatsapp-avd
+
+
+
+root@0752f604027b:~# {ANDROID_HOME}/tools/emulator @Pixel -gpu off
+bash: {ANDROID_HOME}/tools/emulator: No such file or directory
+root@0752f604027b:~# /usr/local/tools/emulator @Pixel -gpu off
+bash: /usr/local/tools/emulator: No such file or directory
+root@0752f604027b:~# /usr/local/android-sdk/tools/emulator @Pixel -gpu off
+PANIC: Unknown AVD name [Pixel], use -list-avds to see valid list.
+HOME is defined but there is no file Pixel.ini in $HOME/.android/avd
+(Note: Directories are searched in the order $ANDROID_AVD_HOME, $ANDROID_SDK_HOME/avd, and $HOME/.android/avd)
+root@0752f604027b:~# 
+root@0752f604027b:~# /app/entrypoint.sh
+mknod: missing operand after '10'
+Try 'mknod --help' for more information.
+root@0752f604027b:~# 
+root@0752f604027b:~# /app/start-avd.sh
+PANIC: Unknown AVD name [Pixel], use -list-avds to see valid list.
+HOME is defined but there is no file Pixel.ini in $HOME/.android/avd
+(Note: Directories are searched in the order $ANDROID_AVD_HOME, $ANDROID_SDK_HOME/avd, and $HOME/.android/avd)
+error: no devices/emulators found
+Installing WhatsApp
+error: no devices/emulators found
+adb: error: failed to get feature set: no devices/emulators found
+- waiting for device -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^Croot@0752f604027b:~# adb list
+adb: usage: unknown command list
+root@0752f604027b:~# /app/start-avd.sh
+PANIC: Unknown AVD name [Pixel], use -list-avds to see valid list.
+HOME is defined but there is no file Pixel.ini in $HOME/.android/avd
+(Note: Directories are searched in the order $ANDROID_AVD_HOME, $ANDROID_SDK_HOME/avd, and $HOME/.android/avd)
+error: no devices/emulators found
+Installing WhatsApp
+error: no devices/emulators found
+adb: error: failed to get feature set: no devices/emulators found
+- waiting for device -
+^Croot@0752f604027b:~# ^C
+root@0752f604027b:~# ^C
+root@0752f604027b:~# /root/Desktop/avd.desktop
+/root/Desktop/avd.desktop: line 1: [Desktop: command not found
+/root/Desktop/avd.desktop: line 7: X-GNOME-Autostart-enabled=true: command not found
+root@0752f604027b:~# /root/Desktop/avd.desktop
+/root/Desktop/avd.desktop: line 1: [Desktop: command not found
+/root/Desktop/avd.desktop: line 7: X-GNOME-Autostart-enabled=true: command not found
+root@0752f604027b:~# sudo /root/Desktop/avd.desktop
+/root/Desktop/avd.desktop: 1: /root/Desktop/avd.desktop: [Desktop: not found
+/root/Desktop/avd.desktop: 7: /root/Desktop/avd.desktop: X-GNOME-Autostart-enabled=true: not found
+root@0752f604027b:~# /app/start-avd.sh
+PANIC: Unknown AVD name [Pixel], use -list-avds to see valid list.
+HOME is defined but there is no file Pixel.ini in $HOME/.android/avd
+(Note: Directories are searched in the order $ANDROID_AVD_HOME, $ANDROID_SDK_HOME/avd, and $HOME/.android/avd)
+error: no devices/emulators found
+Installing WhatsApp
+error: no devices/emulators found
+adb: error: failed to get feature set: no devices/emulators found
+- waiting for device -
+^Croot@0752f604027b:~# ^C
+root@0752f604027b:~# ^C
+root@0752f604027b:~# ^C
+root@0752f604027b:~# ^C
+root@0752f604027b:~# /app/entrypoint.sh
+mknod: missing operand after '10'
+Try 'mknod --help' for more information.
+root@0752f604027b:~# 
+root@0752f604027b:~# 
+root@0752f604027b:~# 
+root@0752f604027b:~# /usr/local/android-sdk/tools/emulator  -gpu off
+emulator: ERROR: No AVD specified. Use '@foo' or '-avd foo' to launch a virtual device named 'foo'
+
+root@0752f604027b:~# 
+root@0752f604027b:~# /usr/local/android-sdk/tools/emulator -avd foo -gpu off
+PANIC: Unknown AVD name [foo], use -list-avds to see valid list.
+HOME is defined but there is no file foo.ini in $HOME/.android/avd
+(Note: Directories are searched in the order $ANDROID_AVD_HOME, $ANDROID_SDK_HOME/avd, and $HOME/.android/avd)
+root@0752f604027b:~# /usr/local/android-sdk/tools/emulator -avd foo -gpu off^C
+root@0752f604027b:~# ^C
+root@0752f604027b:~# /usr/local/android-sdk/tools/emulator -list-avds
+root@0752f604027b:~# /usr/local/android-sdk/tools/emulator -list-avds
+root@0752f604027b:~# /usr/local/android-sdk/tools/avdmanager
+bash: /usr/local/android-sdk/tools/avdmanager: No such file or directory
+root@0752f604027b:~# /app/start-avd.sh
+PANIC: Unknown AVD name [Pixel], use -list-avds to see valid list.
+HOME is defined but there is no file Pixel.ini in $HOME/.android/avd
+(Note: Directories are searched in the order $ANDROID_AVD_HOME, $ANDROID_SDK_HOME/avd, and $HOME/.android/avd)
+error: no devices/emulators found
+Installing WhatsApp
+error: no devices/emulators found
+adb: error: failed to get feature set: no devices/emulators found
+- waiting for device -
+^Croot@0752f604027b:~# ^C
+root@0752f604027b:~# 
