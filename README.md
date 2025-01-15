@@ -1,3 +1,5 @@
+docker system prune -a -f --volumes borrar todo
+ 
  docker system df
  
  
