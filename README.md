@@ -202,6 +202,10 @@ docker cp funciono.sh obry:opt/sdk/
 
 
 
+Que los datos del docker se guarden en   /workspaces/windows ejemplo las iso de windows 
+docker run -it -v /workspaces/windows:/storage  -p 8006:8006 --device=/dev/kvm --device=/dev/net/tun --cap-add NET_ADMIN --stop-timeout 120 --name obry win
+
+
 
 
 
