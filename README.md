@@ -1,3 +1,5 @@
+ sudo du -ah . | sort -rh | head -n 10 ver archuvos mas grades
+
 docker system prune -a -f --volumes borrar todo
  
  docker system df
