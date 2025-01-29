@@ -1,3 +1,5 @@
+sudo sync; sudo sysctl -w vm.drop_caches=3   liberar rammmmmmmmmmmmmm
+ 
  sudo du -ah . | sort -rh | head -n 10 ver archuvos mas grades
 
 docker system prune -a -f --volumes borrar todo
