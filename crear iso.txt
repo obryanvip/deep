@@ -12,3 +12,6 @@
 
 
 si da error carpeta temporal nmbree y direccion ejemplo genisoimage -o archivo_salida.iso -R -J /workspaces/deep/carpeta_temporal
+##cargar iso en qemu
+  -drive file=/workspaces/deep/carpeta_temporal/archivo_salida.iso,media=cdrom \
+
