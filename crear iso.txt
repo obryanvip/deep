@@ -7,3 +7,8 @@
    60  mkdir carpeta_temporal
    61  unzip b.zip -d carpeta_temporal
    62  genisoimage -o archivo_salida.iso -R -J carpeta_temporal/
+
+
+
+
+si da error carpeta temporal nmbree y direccion ejemplo genisoimage -o archivo_salida.iso -R -J /workspaces/deep/carpeta_temporal
