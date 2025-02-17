@@ -1,0 +1,9 @@
+ # Para Ubuntu/Debian
+   55  sudo apt-get install genisoimage
+   56  genisoimage -o archivo_salida.iso -R -J carpeta_temporal/
+   57  docker ps -a
+   58  docker stop 8b756572dd4c
+   59  docker start  8b756572dd4c
+   60  mkdir carpeta_temporal
+   61  unzip b.zip -d carpeta_temporal
+   62  genisoimage -o archivo_salida.iso -R -J carpeta_temporal/
