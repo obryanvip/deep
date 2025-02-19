@@ -1,5 +1,9 @@
 
-docker exec -u  -it obry bash
+docker exec   -it obry bash
+
+
+
+
 docker exec -u root -it obry bash
 
 
