@@ -1,3 +1,10 @@
+
+docker exec -u  -it obry bash
+docker exec -u root -it obry bash
+
+
+
+
 sudo sync; sudo sysctl -w vm.drop_caches=3   liberar rammmmmmmmmmmmmm
  
  sudo du -ah . | sort -rh | head -n 10 ver archuvos mas grades
