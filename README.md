@@ -57,6 +57,9 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/mwt-desktop.gpg]
 sudo apt update && sudo apt install github-desktop
 
 
+
+mklink /D "C:\ruta\del\enlace\simbólico" "C:\ruta\del\objetivo"
+
 ###########zip y zip en partes
 
 
@@ -283,5 +286,8 @@ zip -s 90m /workspaces/data.zip /tmp/data.img    --------)  guarda en /workspace
 zip -s 90m /tmp/data.zip /tmp/data.img             ---------) guarda en tmp /tmp/data.zip data.z001 .... data.z37
 zip -s 0 /workspaces/data.zip --out /workspaces/data_full.zip
 unzip /workspaces/data_full.zip
+
+
+enlave en windows mklink /D "C:\Users\Docker\Desktop\enlaces" "\\host.lan\Data\w11\w11"
 
 
