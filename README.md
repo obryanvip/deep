@@ -274,3 +274,7 @@ docker run -it -v /workspaces/windows:/storage  -p 8006:8006 --device=/dev/kvm -
 zip -r mozilla75mb.zip .mozilla
 zip -r mozilla75mb.zip .mozilla
 
+zip -s 90m /workspaces/data.zip /tmp/data.img    --------)  guarda en /workspaces/data.zip
+zip -s 90m /tmp/data.zip /tmp/data.img             ---------) guarda en tmp /tmp/data.zip data.z001 .... data.z37
+zip -s 0 /workspaces/data.zip --out /workspaces/data_full.zip
+unzip /workspaces/data_full.zip
