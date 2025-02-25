@@ -205,6 +205,29 @@ docker exec -u root -it obry bash
 tar -czvf android_backup.tar.gz -C /ruta/en/host .android
 
 
+
+ cd /tmp/
+    2  ls
+    3  zip data dataw1115gb.img
+    4  docker start obry
+    5  docker stop obry
+    6  docker start obry
+    7  docker start obryu
+    8  docker start obry
+    9  a
+   10  zip dataw1115gb24-02-2025.zip dataw1115gb24-02-2025.img
+   11  c
+   12  
+     docker star obry
+    2  dockr start obry
+    3  docker start obry
+      cp /workspaces/data.img /tmp/
+      cp /workspaces/data.img /tmp/dataantesdeformatear.img
+      cp /workspaces/data.img /tmp/dataw1115gb.img
+
+     history
+
+
 ######descomprimir 
 tar -xzvf android_backup.tar.gz -C /ruta/de/destino
 
@@ -223,5 +246,31 @@ docker run -it -v /workspaces/windows:/storage  -p 8006:8006 --device=/dev/kvm -
 
 
 
+ cd /tmp/
+    2  ls
+    3  zip data dataw1115gb.img
+    4  docker start obry
+    5  docker stop obry
+    6  docker start obry
+    7  docker start obryu
+    8  docker start obry
+    9  a
+   10  zip dataw1115gb24-02-2025.zip dataw1115gb24-02-2025.img
+   11  c
+   12  
+     docker star obry
+    2  dockr start obry
+    3  docker start obry
+      cp /workspaces/data.img /tmp/
+      cp /workspaces/data.img /tmp/dataantesdeformatear.img
+      cp /workspaces/data.img /tmp/dataw1115gb.img
+    sudo apt update 
+      sudo apt-get install p7zip-full
 
+      zip -r -s 98m data.img.enparte /workspaces/data.img
+    zip -r mozilla75mb.zip .mozilla
+
+7z x mozilla_pro.zip
+zip -r mozilla75mb.zip .mozilla
+zip -r mozilla75mb.zip .mozilla
 
