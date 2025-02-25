@@ -264,6 +264,8 @@ docker run -it -v /workspaces/windows:/storage  -p 8006:8006 --device=/dev/kvm -
       cp /workspaces/data.img /tmp/
       cp /workspaces/data.img /tmp/dataantesdeformatear.img
       cp /workspaces/data.img /tmp/dataw1115gb.img
+         zip dataw1115gb25-02-2025.zip data.img
+
     sudo apt update 
       sudo apt-get install p7zip-full
 
@@ -274,7 +276,12 @@ docker run -it -v /workspaces/windows:/storage  -p 8006:8006 --device=/dev/kvm -
 zip -r mozilla75mb.zip .mozilla
 zip -r mozilla75mb.zip .mozilla
 
+sudo apt-get update
+sudo apt-get install qemu-utils
+qemu-img resize /tmp/data.img 15G
 zip -s 90m /workspaces/data.zip /tmp/data.img    --------)  guarda en /workspaces/data.zip
 zip -s 90m /tmp/data.zip /tmp/data.img             ---------) guarda en tmp /tmp/data.zip data.z001 .... data.z37
 zip -s 0 /workspaces/data.zip --out /workspaces/data_full.zip
 unzip /workspaces/data_full.zip
+
+
