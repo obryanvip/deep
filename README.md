@@ -277,7 +277,7 @@ zip -r mozilla75mb.zip .mozilla
 zip -r mozilla75mb.zip .mozilla
 
 sudo apt-get update
-sudo apt-get install qemu-utils
+sudo apt-get install -y qemu-utils
 qemu-img resize /tmp/data.img 15G
 zip -s 90m /workspaces/data.zip /tmp/data.img    --------)  guarda en /workspaces/data.zip
 zip -s 90m /tmp/data.zip /tmp/data.img             ---------) guarda en tmp /tmp/data.zip data.z001 .... data.z37
