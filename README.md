@@ -1,3 +1,9 @@
+sudo find / -name "*.qcow2" 
+
+
+
+
+
 
 docker exec   -it obry bash
 
