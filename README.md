@@ -1,3 +1,24 @@
+####agregar sudo
+apt install sudo
+    2  apt install sudo
+    3  apt install sudo
+    4  apt install sudo
+    5  su passwd headless
+    6  sudo passwd headless
+    7  sudo usermod -aG sudo headless
+    8  su usermod -aG sudo headless
+    9   usermod -aG sudo headless
+   10   usermod -aG sudo headless
+   11   usermod -aG sudo headless
+       5  su passwd root
+
+chmod 755 xampp-linux-*-installer.run
+
+Ejecuta el instalador
+
+sudo ./xampp-linux-*-installer.run
+
+
 sudo find / -name "*.qcow2" 
 
 
