@@ -1,0 +1,8 @@
+pasos para instalar con Docker en tu VM
+Instala Docker:
+
+Bash
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo apt-get install docker-compose-plugin -y
