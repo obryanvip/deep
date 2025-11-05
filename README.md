@@ -1,3 +1,4 @@
+https://shell.cloud.google.com/?show=ide%2Cterminal
 ####agregar sudo
 apt install sudo
     2  apt install sudo
