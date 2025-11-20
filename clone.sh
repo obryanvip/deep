@@ -18,3 +18,6 @@ git commit -m "28-088-2024"
 
 # Enviar los cambios al repositorio remoto en GitHub
 git push
+
+
+#   mv /workspaces/deep/nubecodespace/todo/home-codespace/ /home/codespace/
