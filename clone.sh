@@ -1,4 +1,4 @@
-#clonar github frefoxcolab y actualizar github descomentar git clone la primera vez
+gun #clonar github frefoxcolab y actualizar github descomentar git clone la primera vez
 #se debe descomprimir .so sacarlo de la carpeta y dejarlo afuera
 %%shell
 #!/bin/bash
@@ -20,5 +20,23 @@ git commit -m "28-088-2024"
 git push
 
 
-#   mv /workspaces/deep/nubecodespace/todo/home-codespace/. /home/codespace/
-#   mv /workspaces/deep/nubecodespace/todo/opt/. /opt/
+#   mv /workspaces/deep/nubecodespace/todo/home-codespace/.* /home/codespace/
+#   mv /workspaces/deep/nubecodespace/todo/opt/.* /opt/
+
+#segun gemini *para todo lo de dentro
+-r cRPET y contenido sin el asterisco 
+-v ver progreso
+cp   /workspaces/deep/nubecodespace/todo/home-codespace/* /home/codespace/
+  cp  /workspaces/deep/nubecodespace/todo/opt/* /opt/
+
+  mv  -v /workspaces/deep/nubecodespace* /home/codespace/
+  mv  -v /workspaces/deep/nubecodespace/todo/opt/* /opt/\\
+
+
+  ###funciona
+  @obryanvipu ➜ /workspaces/deep (main) $ sudo cp -r -v  /workspaces/deep/nubecodespace/todo/home-codespace/.* /home/codespace/
+@obryanvipu ➜ /workspaces/deep (main) $ sudo cp -r -v  /workspaces/deep/nubecodespace/todo/opt/. /opt/
+  
+
+
+
