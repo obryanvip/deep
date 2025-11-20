@@ -20,4 +20,5 @@ git commit -m "28-088-2024"
 git push
 
 
-#   mv /workspaces/deep/nubecodespace/todo/home-codespace/ /home/codespace/
+#   mv /workspaces/deep/nubecodespace/todo/home-codespace/. /home/codespace/
+#   mv /workspaces/deep/nubecodespace/todo/opt/. /opt/
