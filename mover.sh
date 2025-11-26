@@ -1,9 +1,9 @@
 sudo rm -r  /home/codespace/ 
 
-mv /tmp/nubecodespace/todo/home/* /home/codespace/ 
+mv /tmp/nubecodespace/todo/home/* /home/codespace/   ##solo visaibles
 
 
-mv /tmp/nubecodespace/todo/home/.* /home/codespace/
+mv /tmp/nubecodespace/todo/home/. /home/codespace/   ###todo el contenido
 
 ls /home/codespace/
 
@@ -47,7 +47,7 @@ sudo rm -r  /home/codespace/  ; sudo rm -r  /home/codespace/ ; sudo rm -r  /home
 
 
 ####borra todo lo de adentro para pasar lo nuevo sin error ; sudo rm -rf /home/codespace/{*,.*}  ;
-mv /workspaces/deep/nubecodespace/todo/home/* /home/codespace/
+mv /workspaces/deep/nubecodespace/todo/home/. /home/codespace/
 
 
 /opt/google/chrome-remote-desktop/chrome-remote-desktop --start 
