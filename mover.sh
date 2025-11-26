@@ -1,3 +1,5 @@
+sudo rm -r  /home/codespace/ 
+
 mv /tmp/nubecodespace/todo/home/* /home/codespace/ 
 
 
