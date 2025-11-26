@@ -13,3 +13,11 @@ mv /tmp/nubecodespace/todo/opt/. /opt
 
 mv /tmp/nubecodespace/todo/opt/.* /opt
 
+ls /tmp/nubecodespace/todo/opt
+ls /tmp/nubecodespace/todo/home/
+
+
+
+
+
+
