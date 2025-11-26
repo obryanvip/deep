@@ -12,4 +12,6 @@ wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/140.0esr/li
 tar -xf firefox-*.tar.xz
 
 
-
+#145 firefox
+wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/145.0.2/linux-x86_64/es-ES/firefox-145.0.2.tar.xz
+tar -xf firefox-*.tar.xz
