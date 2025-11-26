@@ -11,7 +11,7 @@ sudo rm -r  /opt/goole/
 
 mv /tmp/nubecodespace/todo/opt/. /opt
 
-mv /tmp/nubecodespace/todo/opt/.* /opt
+mv /tmp/nubecodespace/todo/opt/. /opt
 
 ls /tmp/nubecodespace/todo/opt
 ls /tmp/nubecodespace/todo/home/
@@ -56,6 +56,11 @@ enlace
 
 ln -s /home/codespace /workspaces/deep/enlace
 
+####3si funcionan para particion tmp porque mv no funciona con distintas particiones
+
+
+cp -r /tmp/nubecodespace/todo/home/. /home/codespace/
+cp -r /tmp/nubecodespace/todo/opt/. /opt
 
 
 
