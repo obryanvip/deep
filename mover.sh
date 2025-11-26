@@ -43,6 +43,10 @@ mv /tmp/nubecodespace/todo/home-codespace/.android \
 #########desde deep
 ls /home/codespace/
 sudo rm -r  /home/codespace/  ; sudo rm -r  /home/codespace/ ; sudo rm -r  /home/codespace/  ; sudo rm -r  /home/codespace/  mkdir -p /home/codespace ;
+
+
+
+####borra todo lo de adentro para pasar lo nuevo sin error ; sudo rm -rf /home/codespace/{*,.*}  ;
 mv /workspaces/deep/nubecodespace/todo/home/* /home/codespace/
 
 
