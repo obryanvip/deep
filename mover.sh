@@ -40,5 +40,16 @@ mv /tmp/nubecodespace/todo/home-codespace/.android \
 
 
 
+#########desde deep
+ls /home/codespace/
+sudo rm -r  /home/codespace/  ; sudo rm -r  /home/codespace/ ; sudo rm -r  /home/codespace/  ; sudo rm -r  /home/codespace/ 
+mv /workspaces/deep/nubecodespace/todo/home/* /home/codespace/
+
+
+/opt/google/chrome-remote-desktop/chrome-remote-desktop --start 
+
+
+
+
 
 
