@@ -61,6 +61,7 @@ ln -s /home/codespace /workspaces/deep/enlace
 
 cp -r /tmp/nubecodespace/todo/home/. /home/codespace/
 cp -r /tmp/nubecodespace/todo/opt/. /opt
+cp /tmp/nubecodespace/todo/home/.config/chrome-remote-desktop/host%23d4fdc40e7fa2c01a49496b140277aa43.json /workspaces/deep/enlace/home/codespace/.config/chrome-remote-desktop
 
 
 
