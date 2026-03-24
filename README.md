@@ -1,3 +1,4 @@
+google-chrome --no-sandbox --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage
 https://shell.cloud.google.com/?show=ide%2Cterminal
 ####agregar sudo
 apt install sudo
