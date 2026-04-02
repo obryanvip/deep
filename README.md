@@ -264,6 +264,9 @@ tar -czvf android_backup.tar.gz -C /ruta/en/host .android
       cp /workspaces/data.img /tmp/dataantesdeformatear.img
       cp /workspaces/data.img /tmp/dataw1115gb.img
 
+copiar todos los queempiecen con windows...
+      sudo cp -r /workspaces/windows*  /tmp/
+
       zip /tmp/dataw1115gb25-02-2025.zip /workspaces/data.img    --------) zip a tmp
 
      history
