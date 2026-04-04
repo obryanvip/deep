@@ -1,6 +1,9 @@
 ##VER CARPETAS QUE MAS USAN ESAPCIO
 sudo apt install qdirstat
  qdirstat
+###chrome linux
+google-chrome --user-data-dir="/tmp/chrometmplinuxgoogle/chrometmplinuxgoogleprofile/" --no-sandbox --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage --password-store=basic
+
 
 ###GOOGLE CHROME
 google-chrome --no-sandbox --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage
