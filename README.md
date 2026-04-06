@@ -1,3 +1,7 @@
+find . -type f -size +99M -ok rm {} \;
+borrar archivos de mas de 100 mb pregunta y o n
+
+
 ##VER CARPETAS QUE MAS USAN ESAPCIO
 sudo apt install qdirstat
  qdirstat
