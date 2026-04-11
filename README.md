@@ -1,3 +1,5 @@
+wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/149.0.2/linux-x86_64/es-ES/firefox-149.0.2.tar.xz
+
 find . -type f -size +99M -ok rm {} \;
 borrar archivos de mas de 100 mb pregunta y o n
 
