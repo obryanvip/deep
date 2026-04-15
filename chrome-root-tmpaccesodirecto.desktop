@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=chrome-root-tmp
+Comment=
+Exec=google-chrome --user-data-dir="/root/tmpcolabchrome/" --no-sandbox --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage --password-store=basic
+Icon=
+Path=
+Terminal=false
+StartupNotify=false
