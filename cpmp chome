@@ -1,0 +1,8 @@
+
+codespace ➜ ~ $ google-chrome --disable-gpu --use-gl=swiftshader
+
+
+
+
+
+google-chrome --no-sandbox --disable-gpu --disable-software-rasterizer --disable-dev-shm-usage
