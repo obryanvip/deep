@@ -1,0 +1,14 @@
+sudo apt update && sudo apt install -y gnome-keyring seahorse libsecret-1-0 dbus-x11 && \
+mkdir -p ~/.local/share/keyrings && \
+cat <<EOF > ~/.local/share/keyrings/login.keyring
+[keyring]
+display-name=login
+ctime=0
+mtime=0
+lock-on-idle=false
+lock-after=false
+EOF
+echo "login" > ~/.local/share/keyrings/default && \
+killall gnome-keyring-daemon 2>/dev/null; \
+export $(dbus-launch --sh-syntax) && \
+eval $(gnome-keyring-daemon --start --components=secrets)
